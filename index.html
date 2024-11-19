@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/Style.css">
+    <title>INFORMATICA LTDA</title>
+</head>
+<body>
+    <div class="Texto_Principal">
+        <h1>INFORMATICA LTDA</h1>
+        <div class="icons">
+            <div class="item">
+                <img src="Style/Imagens/Icons/PcHome-removebg-preview.png" alt="Logo_da_Pagina">
+                <p>LOGIN/CADASTRO</p>
+            </div>
+            <div class="item">
+                <img src="Style/Imagens/Icons/Carrinho-removebg-preview.png" alt="Carrinho">
+                <p>CARRINHO</p>
+            </div>
+        </div>
+    </div>    
+
+    <div class="Promocoes">
+        <h2>CONHEÇA NOSSAS PROMOÇÕES</h2>
+    </div>
+
+    <div class="Produtos" onclick="showModal('modalPcGamer')">
+        <h3>PC GAMER</h3>
+        <img src="Style/Imagens/Produtos/PC_GAMER-removebg-preview.png" alt="PcGamer">
+    </div>
+
+    <div class="Produtos" onclick="showModal('modalMouseGamer')">
+        <h3>MOUSE GAMER</h3>
+        <img src="Style/Imagens/Produtos/Mouse_Gamer-removebg-preview.png" alt="MouseGamer">
+    </div>
+
+    <div class="Produtos" onclick="showModal('modalPcCasual')">
+        <h3>PC CASUAL</h3>
+        <img src="Style/Imagens/Produtos/PcHome-removebg-preview.png" alt="PC_Casual">
+    </div>
+
+    <div class="Produtos" onclick="showModal('modalMonitor')">
+        <h3>MONITOR</h3>
+        <img src="Style/Imagens/Produtos/Monitor-removebg-preview.png" alt="MONITOR">
+    </div>
+
+    <div id="modalPcGamer" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalPcGamer')">&times;</span>
+            <h2>Promoção PC GAMER</h2>
+            <div class="product-info">
+                <img src="Style/Imagens/Produtos/PC_GAMER-removebg-preview.png" alt="PC Gamer" class="product-image">
+                <div class="product-details">
+                    <!-- Preço original (riscado) e preço com desconto -->
+                    <div class="price-old">R$ 7.499,00</div>
+                    <div class="price-new">R$ 5.999,00</div>
+                    <img src="Style/Imagens/Icons/Desconto.png" alt="" class="cart-icon">
+                    <img src="Style/Imagens/Icons/Carrinho-removebg-preview.png" alt="Carrinho" class="cart-icon">
+                </div>
+            </div>
+            <p>"Desfrute de um desempenho excepcional com o nosso PC Gamer. Equipado com os melhores componentes de última geração, ele é ideal para jogos de alto desempenho, streaming e outras tarefas exigentes. Com um design moderno e robusto, este PC é perfeito para quem busca a máxima performance em seus jogos favoritos. Aproveite a promoção e leve para casa o melhor do mundo dos games!"</p>
+        </div>
+    </div>
+    
+    <div id="modalMouseGamer" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalMouseGamer')">&times;</span>
+            <h2>Promoção MOUSE GAMER</h2>
+            <div class="product-info">
+                <img src="Style/Imagens/Produtos/Mouse_Gamer-removebg-preview.png" alt="Mouse Gamer" class="product-image">
+                <div class="product-details">
+                    <!-- Preço original (riscado) e preço com desconto -->
+                    <div class="price-old">R$ 374,00</div>
+                    <div class="price-new">R$ 299,00</div>
+                    <img src="Style/Imagens/Icons/Desconto.png" alt="" class="cart-icon">
+                    <img src="Style/Imagens/Icons/Carrinho-removebg-preview.png" alt="Carrinho" class="cart-icon">
+                </div>
+            </div>
+            <p>"O Mouse Gamer foi desenvolvido para proporcionar precisão, conforto e rapidez durante suas partidas. Seu design ergonômico e botões personalizáveis garantem uma experiência única de controle, enquanto a sensibilidade ajustável é perfeita para diferentes estilos de jogo. Acelere suas ações com um mouse que acompanha a sua velocidade no jogo!"</p>
+        </div>
+    </div>
+    
+    <div id="modalPcCasual" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalPcCasual')">&times;</span>
+            <h2>Promoção PC CASUAL</h2>
+            <div class="product-info">
+                <img src="Style/Imagens/Produtos/PcHome-removebg-preview.png" alt="PC Casual" class="product-image">
+                <div class="product-details">
+                    <!-- Preço original (riscado) e preço com desconto -->
+                    <div class="price-old">R$ 3.000,00</div>
+                    <div class="price-new">R$ 2.499,00</div>
+                    <img src="Style/Imagens/Icons/Desconto.png" alt="" class="cart-icon">
+                    <img src="Style/Imagens/Icons/Carrinho-removebg-preview.png" alt="Carrinho" class="cart-icon">
+                </div>
+            </div>
+            <p>"Perfeito para o uso diário, o PC Casual oferece o equilíbrio ideal entre performance e preço. Com uma configuração eficiente para navegar na web, trabalhar com documentos e até mesmo assistir filmes e vídeos, este modelo atende às suas necessidades do dia a dia com a qualidade que você merece. Ideal para quem busca um computador confiável sem abrir mão de um bom custo-benefício."</p>
+        </div>
+    </div>
+    
+    <div id="modalMonitor" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalMonitor')">&times;</span>
+            <h2>Promoção MONITOR</h2>
+            <div class="product-info">
+                <img src="Style/Imagens/Produtos/Monitor-removebg-preview.png" alt="Monitor" class="product-image">
+                <div class="product-details">
+                    <!-- Preço original (riscado) e preço com desconto -->
+                    <div class="price-old">R$ 1.100,00</div>
+                    <div class="price-new">R$ 899,00</div>
+                    <img src="Style/Imagens/Icons/Desconto.png" alt="" class="cart-icon">
+                    <img src="Style/Imagens/Icons/Carrinho-removebg-preview.png" alt="Carrinho" class="cart-icon">
+                </div>
+            </div>
+            <p>"Este monitor traz uma experiência de visualização imersiva com cores vibrantes e imagens nítidas, tornando-o ideal para jogos, trabalho e entretenimento. Seu design elegante se adapta a qualquer ambiente, enquanto as tecnologias de redução de cintilação e filtro de luz azul protegem seus olhos. Aproveite a oferta e tenha o melhor da qualidade de imagem na sua mesa de trabalho ou na sala de jogos."</p>
+        </div>
+    </div>
+    
+
+    <footer class="Redes_Sociais">
+        <h2>ACOMPANHE-NOS NAS REDES</h2>
+        <p>INSTAGRAM | YOUTUBE | GMAIL</p>
+    </footer>
+
+    <script src="Script/Script.js"></script>
+</body>
+</html>
